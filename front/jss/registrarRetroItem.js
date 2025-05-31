@@ -115,7 +115,7 @@ Promise.all([
         sorted.forEach(retro => {
             html += `<tr>
                 <td>${sprintMap[retro.sprint_id] || retro.sprint_id}</td><td>${retro.categoria}</td><td>${retro.descripcion || ''}</td><td>${retro.cumplida ? 'Sí' : 'No'}</td><td>${retro.fecha_revision || ''}</td>
-                <td style="text-align:left; white-space:nowrap;">
+                <td>
                     <button onclick="modificarRetro(${retro.id})">Modificar</button>
                     <button onclick="eliminarRetro(${retro.id})">Eliminar</button>
                 </td>
